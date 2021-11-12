@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Account Page </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+        <a class="navbar-brand" href="index.html">
+            <img src="stuff/logo1.jpg" alt="logo" style="width:40px;">
+        </a>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="menu.html">Meals </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#holiday">Holidays </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="service.html">Service At Station</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="account.html">My Account</a>
+            </li>
+
+            <a class="navbar-brand" href="index.html">
+                <img src="stuff/logo2.png" class="" alt="logo" style="width:40px;">
+            </a>
+    </nav>
+
+    <div class="row bgback" id="railbg">
+
+        <div class="container">
+            <div class="d-flex justify-content-center h-100">
+                <div class="cardlogin">
+                    <div class="card-header">
+                        <h3>Sign In</h3>
+
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="input-group form-group">
+
+                                <input type="text" class="form-control" placeholder="Username/Registered E-mail ID">
+
+                            </div>
+                            <div class="input-group form-group">
+
+                                <input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="row align-items-center remember">
+                                <input type="checkbox">Remember Me
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Login" class="btn float-right login_btn"
+                                    style="color: rgb(234, 234, 240); background-color: rgb(89, 89, 95);">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-center links">
+                            <button type="submit" class="small" data-toggle="modal" data-target="#myModal1">Don't have
+                                an account? Sign Up</button>
+                        </div>
+                        <br>
+
+                        <div class="d-flex justify-content-center links">
+                            <button type="submit" class="small" data-toggle="modal" data-target="#myModal">Forgot
+                                password</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2021 All Rights Reserved Designed and Hosted by Saurav Kumar</p>
+    </footer>
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered  modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">To reset Your password kindly enter Registered email id</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <b>Registered E-Mail :<br></b>
+
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="" id="" placeholder="test@test.com">
+                        <br><input name="" id="" class="btn btn-success btn-sm" type="button"
+                            value="Send Verification Email">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal1">
+        <div class="modal-dialog modal-dialog-centered  modal-info">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">CREATE NEW ACCOUNT</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <b>Please Enter the following details to create New account with us.<br></b>
+
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" class="form-control" name="" id="" placeholder="Full Name">
+                        <label>Email ID :</label>
+                        <input type="email" class="form-control" name="" id="" placeholder="test@test.com">
+                        <label>Phone Number</label>
+                        <input type="number" class="form-control" name="" id="" placeholder="Phone Number">
+                        <label>Password</label>
+                        <input type="password" class="form-control" name="" id="" placeholder="password">
+                        <br><input name="" id="" class="btn btn-success btn-sm" type="button" value="Create Account"
+                            onclick="_blank">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Conatct - IRCTC </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        #Submit,#Reset {
+            background-color: rgb(127, 186, 214);
+            border-color: rgb(127, 186, 214);
+            border-radius: 5px;
+            font-size: large;
+        }
+
+        form {
+            text-align: center;
+            width: 600px;
+            border: 2px solid rgb(106, 129, 204);
+            padding: 15px;
+            margin: 50px;
+            background-color: rgb(213, 213, 230);
+            display: inline-block;
+            margin-left: 50px;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        div {
+            text-align: center;
+        }
+    </style>
+    <script type="text/javascript">
+        function msg() {
+            alert("Thanks For Sharing Your Concern with us. Your Query has been Forwarded.");
+            var name =
+                document.forms["RegForm"]["Name"];
+
+            return true;
+        }
+    </script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+        <a class="navbar-brand" href="index.html">
+            <img src="stuff/logo1.jpg" alt="logo" style="width:40px;">
+        </a>
+
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="menu.html">Meals </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html#holiday">Holidays </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="service.html">Service At Station</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="account.html">My Account</a>
+            </li>
+            <a class="navbar-brand" href="index.html">
+                <img src="stuff/logo2.png" class="" alt="logo" style="width:40px;">
+            </a>
+    </nav>
+    <div class="row bgback ">
+        <!--Booking Form-->
+        <div class="col-4" id="form">
+            <div>
+                <font size="12">Contact Us </font>
+            </div>
+        </div>
+
+        <div>
+            <form name="RegForm" onsubmit="return msg()">
+                <font size="4">Fill This Contact Form and our team will Contact you soon. <br>
+                </font>
+                <label for="fname">First Name
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="fname" name="fname" placeholder="Enter First Name" required><br>
+                <label for="lname">Last
+                    Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="lname" name="lname" placeholder="Enter Last Name" required><br>
+                <label for="userid">IRCTC user
+                    ID&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="text" id="userid" name="userid" placeholder="Enter IRCTC Usename"><br>
+                <label for="EMail">Registered E-mail Id&nbsp;&nbsp;&nbsp;</label>
+                <input type="email" id="email" name="email" placeholder="Enter Registered E-Mail" required><br>
+                <label for="date">Ticket Booking Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="date" id="date" name="date">
+                <br>
+                <label for="query">Query Related to</label><br>
+                <input type="checkbox">&nbsp;Booking Related <br>
+                <input type="checkbox">&nbsp;Account Issue&nbsp;&nbsp; &nbsp;<br>
+                <input type="checkbox">&nbsp;&nbsp;Payment Issue &nbsp;<br>
+                <input type="checkbox">&nbsp;&nbsp;Refund Issue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+                <label for="message">Your
+                    Message&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                <input type="message" id="message" name="message" required>
+                <br><br>
+                <input type="Submit" id="Submit" value="Submit">
+                <input type="Reset"
+					value="Reset" id="Reset"><br><br>
+                <label>
+            </form>
+            You Can Also contact us on the details given below for faster response .<br>
+            <b>Customer Care Numbers : 0000000000, 00000000000 (Language: Hindi and English)..</b><br>
+            For Railway tickets booked through IRCTC
+            General Information<br>
+            I-tickets/e-tickets : saurav@saurav.co<br>
+            For Cancellation E-tickets : saurav@saurav.co<br>
+
+
+            For IRCTC SBI Card users who do not receive the card within 01 month from the date of application kindly
+            call on the Railway SBI Card Helpline nos. at 00000000000 or 0000000001 (if calling from BSNL/MTNL line)
+            or send email to saurav@saurav.co. For other queries on your IRCTC SBI card account, kindly email at
+            saurav@saurav.co
+
+            Registered Office / Corporate Office<br>
+            Indian Railway Catering and Tourism Corporation Ltd.,<br>
+            <address>B-148, 11th Floor, Statesman House,<br>
+                Barakhamba Road, New Delhi 110001</address></label>
+
+        </div>
+    </div>
+    <footer>
+        <p>Copyright &copy; 2021 All Rights Reserved Designed and Hosted by Saurav Kumar</p>
+    </footer>
+</body>
+
+</html>
